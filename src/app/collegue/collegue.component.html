@@ -1,0 +1,16 @@
+
+
+<div>
+    <img [src]="collegue.photoURL" alt="beau_gosse" height="30%" width="30%">
+    <p>{{collegue.pseudo}}</p>
+    <p>{{collegue.score}}</p>
+    <app-avis (avis)="onVoted($event)" [score]=collegue.score></app-avis>
+</div>
+
+
+
+<!-- <img src="https://i.pinimg.com/originals/b4/1b/9a/b41b9a2a5eed598dbf36aaea9e1cdf98.jpg" alt="beau_gosse" height="30%" width="30%"> 
+
+"https://i.gzn.jp/img/2010/07/22/chinas_sexiest_tramp/tramp00_m.jpg"
+              -->
+

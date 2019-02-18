@@ -1,0 +1,22 @@
+
+
+.app { 
+    background-image: url(../assets/img/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    font-family: impact;
+    color: whitesmoke;
+    text-shadow: 2px 5px black;
+}  
+
+.title {
+    color:greenyellow;
+    text-shadow: 2px 5px hotpink;
+}
+
+.collegue-title{
+    font-size: 30px;
+    color: whitesmoke;
+    text-shadow: 2px 5px black;
+}
