@@ -1,0 +1,36 @@
+
+
+.main-select{
+
+
+
+}
+
+
+.selections {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ensemble {
+    justify-content: center;
+    align-content: center;
+    color:greenyellow;
+    text-shadow: 2px 2px black;
+}
+
+.img-container {
+    margin-bottom: 50px;
+    width: 350px;
+    height: 500px;
+    background-color: olive;
+    box-shadow: 2px 2px 5px black;
+}
+
+.img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}

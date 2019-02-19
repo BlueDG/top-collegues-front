@@ -3,10 +3,12 @@
 
   <button value="Refresh" onClick="window.location.reload()" class="title">Rafraishir la liste</button>
   
-  <div class ="container">
-  <div class="row collegue-title">
-    <div *ngFor="let obj of collegue" class="col-4 text-center space-around">
-      <app-collegue [collegue]="obj"></app-collegue>
+  <div>
+  <div class="row" >
+
+    <div *ngFor="let obj of collegue" class="col-4">
+      <app-collegue [collegue]="obj" ></app-collegue>
     </div>
+
   </div>
-</div>
+</div>   
