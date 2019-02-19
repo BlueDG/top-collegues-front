@@ -6,9 +6,10 @@
   <div>
   <div class="row" >
 
-    <div *ngFor="let obj of collegue" class="col-4">
+    <div *ngFor="let obj of collegue | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" class="col-4" >
       <app-collegue [collegue]="obj" ></app-collegue>
     </div>
+    <ngb-pagination [(page)]="page" [pageSize]="pageSize" [collectionSize]="collegue.length"></ngb-pagination>
 
   </div>
 </div>   
