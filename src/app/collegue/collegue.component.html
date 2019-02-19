@@ -2,8 +2,8 @@
 
 <div>
     <img [src]="collegue.photoURL" alt="beau_gosse" height="30%" width="30%">
-    <p>{{collegue.pseudo}}</p>
-    <p>{{collegue.score}}</p>
+    <p>{{collegue.pseudo | uppercase}}</p>
+    <p>{{collegue.score | score}}</p>
     <app-avis (avis)="onVoted($event)" [score]=collegue.score></app-avis>
 </div>
 
