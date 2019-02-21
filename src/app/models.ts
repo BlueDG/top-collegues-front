@@ -1,7 +1,8 @@
 export interface Collegue {
     pseudo: string
     score: number
-    photoURL: string
+    photoURL
+    : string
 }
 
 export enum Avis {

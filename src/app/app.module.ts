@@ -12,6 +12,9 @@ import { ListeColleguesComponent } from './liste-collegues/liste-collegues.compo
 import { AccueilComponent } from './accueil/accueil.component';
 import { ScorePipe } from './pipes/score.pipe';
 
+import { HttpClientModule } from '@angular/common/http';
+import { NouveauCollegueTemplateFormComponent } from './nouveau-collegue-template-form/nouveau-collegue-template-form.component';  // l'import qui permet d'échanger avec un serveur http, à ajouter pour récupérer de Spring à Angular. du backend au frontend.
+
 
 @NgModule({
   declarations: [
@@ -22,12 +25,14 @@ import { ScorePipe } from './pipes/score.pipe';
     CollegueComponent,
     ListeColleguesComponent,
     AccueilComponent,
-    ScorePipe
+    ScorePipe,
+    NouveauCollegueTemplateFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
