@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  backendUrl: "http://heroku" // adresse pour heroku
+  backendUrl: "https://dusseux-top-collegues.herokuapp.com/" // adresse pour heroku
 
 };
