@@ -1,10 +1,28 @@
 <form (ngSubmit)="submit()" #monForm="ngForm">
-
-  <label>Ajouter un collègue</label><br>
-  <label>Matricule</label><input [(ngModel)]="postCollegue.matricule" name="val1" required>  <!-- required rend l'elément obligatoire pour valider le form -->
-  <label>Pseudo</label><input [(ngModel)]="postCollegue.pseudo" name="val2" required minlength="2"> <!-- minlength fait que l'élément doit avoir au minimum telle longueur de char -->
-  <label>photoURL</label><input [(ngModel)]="postCollegue.photoURL" name="val3"> <!-- entreguillemets on met l'interface  créée dans models.ts on y ajoute ses elements  -->
-  <button type="submit" [disabled]="monForm.invalid" >Valider</button> <!-- le disabled et l'utulisation de #monForm rend le bouton inutilisable tant que le form est invalide -->
+  <div  class="form-group row">
+  <label class="col-sm-2 col-form-label">Ajouter un collègue</label><br>
+  </div>
+  <div class="form-group row">
+      <label for="matricule" class="col-sm-2 col-form-label">Matricule</label>
+      <div class="col-sm-2">
+        <input [(ngModel)]="postCollegue.matricule" name="val1" type="matricule" class="form-control" id="inputMatricule" placeholder="Obligatoire"> <!-- required rend l'elément obligatoire pour valider le form -->
+      </div>
+  </div>
+  <div class="form-group row">
+      <label for="inputPseudo" class="col-sm-2 col-form-label">Pseudo</label>
+      <div class="col-sm-2">
+        <input [(ngModel)]="postCollegue.pseudo" name="val2" type="pseudo" required minlength="2" class="form-control" id="inputPseudo" placeholder="2 caractères au minimum"> <!-- minlength fait que l'élément doit avoir au minimum telle longueur de char -->
+      </div>
+  </div>
+  <div class="form-group row">
+        <label for="inputURL" class="col-sm-2 col-form-label">photoURL</label>
+        <div class="col-sm-2">
+          <input  [(ngModel)]="postCollegue.photoURL" name="val3"  type="photoURL" class="form-control" id="inputURL" placeholder=""> <!-- entreguillemets on met l'interface  créée dans models.ts on y ajoute ses elements  -->
+        </div>
+  </div>
+  <div class="form-group row move-right">
+    <button type="submit" [disabled]="monForm.invalid" class="col-sm-1">Valider</button> <!-- le disabled et l'utlisation de #monForm rend le bouton inutilisable tant que le form est invalide -->
+  </div>
 
 </form><br>
 

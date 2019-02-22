@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostCollegue} from '../models'
 
 @Component({
   selector: 'app-nouveau-collegue-template-form',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class NouveauCollegueTemplateFormComponent implements OnInit {
 
+  postCollegue : PostCollegue = {} ;
+
   constructor() { }
 
 
@@ -16,7 +19,7 @@ export class NouveauCollegueTemplateFormComponent implements OnInit {
   }
 
   submit(){
-    
+
   }
 
 }
