@@ -1,7 +1,10 @@
-<form>
+<form (ngSubmit)="submit()" #monForm="ngForm">
+
   <label>Ajouter un collègue</label><br>
-  <input type="text" name="firstname">
-  <input type="text" name="lastname">
-  <input type="text" name="photoURL">
-  <button>Valider</button>
+  <label>Matricule</label><input [(ngModel)]="postCollegue.matricule" name="val1" required>  <!-- required rend l'elément obligatoire pour valider le form -->
+  <label>Pseudo</label><input [(ngModel)]="postCollegue.pseudo" name="val2" required minlength="2"> <!-- minlength fait que l'élément doit avoir au minimum telle longueur de char -->
+  <label>photoURL</label><input [(ngModel)]="postCollegue.photoURL" name="val3"> <!-- entreguillemets on met l'interface  créée dans models.ts on y ajoute ses elements  -->
+  <button type="submit" [disabled]="monForm.invalid" >Valider</button> <!-- le disabled et l'utulisation de #monForm rend le bouton inutilisable tant que le form est invalide -->
+
 </form><br>
+

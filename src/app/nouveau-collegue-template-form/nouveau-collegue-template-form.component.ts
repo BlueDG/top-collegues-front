@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './nouveau-collegue-template-form.component.html',
   styleUrls: ['./nouveau-collegue-template-form.component.css']
 })
+
 export class NouveauCollegueTemplateFormComponent implements OnInit {
 
   constructor() { }
@@ -12,6 +13,10 @@ export class NouveauCollegueTemplateFormComponent implements OnInit {
 
   
   ngOnInit() {
+  }
+
+  submit(){
+    
   }
 
 }

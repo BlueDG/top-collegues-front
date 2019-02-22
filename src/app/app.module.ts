@@ -14,6 +14,7 @@ import { ScorePipe } from './pipes/score.pipe';
 
 import { HttpClientModule } from '@angular/common/http';
 import { NouveauCollegueTemplateFormComponent } from './nouveau-collegue-template-form/nouveau-collegue-template-form.component';  // l'import qui permet d'échanger avec un serveur http, à ajouter pour récupérer de Spring à Angular. du backend au frontend.
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { NouveauCollegueTemplateFormComponent } from './nouveau-collegue-templat
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
